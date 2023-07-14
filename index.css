@@ -203,6 +203,86 @@ footer{
     background:#FFF;
     border: 0;
     width: 100%;
-    
+}
+.hide{
+    display: none;
+}
 
+@media screen and (max-width: 576px) {
+    .skills-container, .resume-container{
+        flex-direction: column;  
+    }
+    #what-i-do-description{
+        padding: 20px;
+    }
+    footer{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .about{
+        padding: 10px;
+        background: #FFF8F3;
+        margin: 130px 10px;
+
+    }
+    .about-info-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-primary{
+        border-radius: 5px;
+        background: #FD6E0A;
+        border: 0;
+        color: white;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        /* padding: 15px 35px; */
+    }
+    .contact input[type="text"], .contact input[type=email], textarea {
+        display: block;
+        margin-bottom: 25px;
+        padding: 18px 35px;
+        color: #757575;
+        border-radius: 5px;
+        background:#FFF;
+        border: 0;
+        width: 80%;
+    }
+    nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav li{
+        list-style: none;
+        margin-top: 20px;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        
+}
+@media screen and (min-width:576px) and (max-width: 960px) {
+    .skills-container, .resume-container{
+        display: flex;
+        padding: 20px;
+    }
+    footer{
+        padding: 20px;
+    }
+    .about-info-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
